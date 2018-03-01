@@ -38,6 +38,7 @@ set number
 set ruler
 set hidden
 set incsearch
+set laststatus=2                           "display status bar
 
 " Indentation
 set expandtab
