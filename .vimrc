@@ -33,6 +33,7 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 " **BASIC SETTINGS**
+colorscheme pablo
 syntax enable
 set number
 set ruler
@@ -47,3 +48,12 @@ set shiftwidth=4
 set autoindent
 set smartindent
 
+"These are stock theme options
+"blue.vim
+"darkblue.vim
+"default.vim
+"delek.vim
+"desert.vim
+"elflord.vim
+"evening.vim
+"koehler.vim
