@@ -177,3 +177,12 @@ bindsym XF86AudioPrev exec playerctl previous
 
 # Focus follows mouse
 focus_follows_mouse no
+
+# Disable touch to click
+exec synclient TapButton1=0 TapButton2=0 Tapbutton3=0
+
+#Turn on natural scrolling
+exec synclient HorizScrollDelta=-65 VertScrollDelta=-65
+
+#Turnoff edge scrolling
+exec synclient HorizEdgeScroll=0 VertEdgeScroll=0
