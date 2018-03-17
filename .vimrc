@@ -32,8 +32,7 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-" **BASIC SETTINGS**
-colorscheme pablo
+" **BASIC SETTINGS** colorscheme pablo
 syntax enable
 set number
 set ruler
