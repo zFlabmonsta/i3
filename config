@@ -186,3 +186,6 @@ exec synclient HorizScrollDelta=-65 VertScrollDelta=-65
 
 #Turnoff edge scrolling
 exec synclient HorizEdgeScroll=0 VertEdgeScroll=0
+
+#Turn on TLP Everytime
+exec sudo tlp start
