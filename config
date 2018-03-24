@@ -189,3 +189,8 @@ exec synclient HorizEdgeScroll=0 VertEdgeScroll=0
 
 #Turn on TLP Everytime
 exec sudo tlp start
+
+#Scrot printScreen
+bindsym Print exec scrot $HOME/Pictures/ScreenShoots/`date +%Y-%m-%d_%H:%M:%S`.png                      #Full screen
+bindsym Mod1+Print exec scrot -u $HOME/Pictures/ScreenShoots/`date +%Y-%m-%d_%H:%M:%S`.png              #Windows screen
+bindsym Mod1+Shift+Print exec scrot -s $HOME/Pictures/ScreenShoots/`date +%Y-%m-%d_%H:%M:%S`.png        #select window screen
