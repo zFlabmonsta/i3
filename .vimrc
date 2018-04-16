@@ -17,11 +17,14 @@ Plugin 'tomtom/tcomment_vim'			" comment awareness
 Plugin 'airblade/vim-gitgutter'			" shows modified git files
 Plugin 'easymotion/vim-easymotion'		" jumping tool
 Plugin 'scrooloose/nerdTree'			" directory tab on vim
+Plugin 'dkarter/bullets.vim'            " bullets in vim
+Plugin 'syntastic'                      " syntastics
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
-filetype plugin indent on    " required
+"filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
-"filetype plugin on
+filetype plugin on
 "
 " Brief help
 " :PluginList       - lists configured plugins
@@ -56,3 +59,9 @@ set smartindent
 "elflord.vim
 "evening.vim
 "koehler.vim
+
+"next physical line
+imap <silent> <Down> <C-o> gj
+imap <silent> <Up> <C-o> gk
+nmap <silent> <Down> gj
+nmap <silent> <Up> gk
