@@ -19,6 +19,7 @@ Plugin 'easymotion/vim-easymotion'		" jumping tool
 Plugin 'scrooloose/nerdTree'			" directory tab on vim
 Plugin 'dkarter/bullets.vim'            " bullets in vim
 Plugin 'syntastic'                      " syntastics
+Plugin 'YouCompleteMe'                  " Autocomplete
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
