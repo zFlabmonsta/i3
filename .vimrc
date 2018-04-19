@@ -61,8 +61,5 @@ set smartindent
 "evening.vim
 "koehler.vim
 
-"next physical line
-imap <silent> <Down> <C-o> gj
-imap <silent> <Up> <C-o> gk
-nmap <silent> <Down> gj
-nmap <silent> <Up> gk
+"NERDTree mapping
+map <C-n> :NERDTreeToggle<CR>
