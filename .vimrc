@@ -1,5 +1,5 @@
 set nocompatible              " be iMproved, required
-filetype off                  " required
+filetype plugin on            " required
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -19,7 +19,13 @@ Plugin 'easymotion/vim-easymotion'		" jumping tool
 Plugin 'scrooloose/nerdTree'			" directory tab on vim
 Plugin 'dkarter/bullets.vim'            " bullets in vim
 Plugin 'syntastic'                      " syntastics
-Plugin 'YouCompleteMe'                  " Autocomplete
+"Plugin 'YouCompleteMe'                  " Autocomplete
+Plugin 'tpope/vim-git'
+Plugin 'tpope/vim-fugitive'
+Plugin 'christoomey/vim-conflicted'
+"Plugin 'vim-pandoc/vim-pandoc'          " text converter
+"Plugin 'vimwiki/vimwiki'                " vim wiki
+Plugin 'dracula/vim'                     " dracula theme
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -36,13 +42,19 @@ filetype plugin on
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-" **BASIC SETTINGS** colorscheme pablo
-syntax enable
+" Dracula theme
+color dracula
+
+" **BASIC SETTINGS** 
+syntax on 
 set number
 set ruler
 set hidden
 set incsearch
 set laststatus=2                           "display status bar
+set breakindent                            "wrapped line repeast indent
+set emoji                                  "emoji characters are considered full width
+set termguicolors                          "use GUI colors for the terminal
 
 " Indentation
 set expandtab
@@ -51,7 +63,11 @@ set shiftwidth=4
 set autoindent
 set smartindent
 
+" backspace problem
+set backspace=2
+
 "These are stock theme options
+"colorscheme pablo 
 "blue.vim
 "darkblue.vim
 "default.vim
@@ -63,3 +79,6 @@ set smartindent
 
 "NERDTree mapping
 map <C-n> :NERDTreeToggle<CR>
+
+"clipboard
+set clipboard=unnamed
