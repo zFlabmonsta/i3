@@ -18,14 +18,15 @@ Plugin 'airblade/vim-gitgutter'			" shows modified git files
 Plugin 'easymotion/vim-easymotion'		" jumping tool
 Plugin 'scrooloose/nerdTree'			" directory tab on vim
 Plugin 'dkarter/bullets.vim'            " bullets in vim
-Plugin 'syntastic'                      " syntastics
-"Plugin 'YouCompleteMe'                  " Autocomplete
+Plugin 'vim-syntastic/syntastic'        " syntastics
 Plugin 'tpope/vim-git'
 Plugin 'tpope/vim-fugitive'
 Plugin 'christoomey/vim-conflicted'
-"Plugin 'vim-pandoc/vim-pandoc'          " text converter
-"Plugin 'vimwiki/vimwiki'                " vim wiki
-Plugin 'dracula/vim'                     " dracula theme
+Plugin 'vimwiki/vimwiki'                " vim wiki
+Plugin 'dracula/vim'                    " dracula theme
+Plugin 'rdnetto/YCM-Generator'
+Plugin 'Valloric/YouCompleteMe'
+let g:ycm_global_ycm_extra_conf = '$HOME/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
