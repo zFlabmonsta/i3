@@ -18,7 +18,7 @@ Plugin 'tpope/vim-git'
 Plugin 'vimwiki/vimwiki'                " vim wiki
 Plugin 'vim-syntastic/syntastic'        " syntastics
 "************************************************************
-"Accessibility
+"Make Life Easier
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tomtom/tcomment_vim'			" comment awareness
 Plugin 'easymotion/vim-easymotion'		" jumping tool
@@ -32,16 +32,10 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'dracula/vim'                    " dracula theme
 Plugin 'itchyny/lightline.vim' 			" Modified status bar
 "*************************************************************
-"AutoCompleter
-"Plugin 'rdnetto/YCM-Generator'
-"Plugin 'Valloric/YouCompleteMe'
-"let g:ycm_global_ycm_extra_conf = '$HOME/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
-"*************************************************************
-"Auto Complete Popup
-"Plugin 'vim-scripts/AutoComplPop'
+"SuperTab
+Plugin 'ervandew/supertab'
 "*************************************************************
 "Snippet
-
 " Track the engine.
 Plugin 'SirVer/ultisnips'
 
