@@ -45,7 +45,7 @@ Plugin 'honza/vim-snippets'
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<C-d>"
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
@@ -64,9 +64,22 @@ else
   Plug 'Shougo/deoplete.nvim'
   Plug 'roxma/nvim-yarp'
   Plug 'roxma/vim-hug-neovim-rpc'
+  " C
+  Plug 'zchee/deoplete-clang'
+  " JS
+  Plug 'wokalski/autocomplete-flow'
+     " For func argument completion
+  Plug 'Shougo/neosnippet'
+  Plug 'Shougo/neosnippet-snippets'
+  "Python
+  Plug 'zchee/deoplete-jedi'
 endif
 let g:deoplete#num_processes = 1
 let g:deoplete#enable_at_startup = 1
+"neosnippet
+let g:neosnippet#enable_completed_snippet = 1
+    " Disable open paren when inserting function name
+"let g:autocomplete_flow#insert_paren_after_function = 0
 "*************************************************************
 call plug#end()
 
